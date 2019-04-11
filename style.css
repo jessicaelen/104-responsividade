@@ -18,9 +18,16 @@ nav{
 nav a{
     color: aliceblue;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 25pt;
+    font-family: 'Dokdo', cursive;
+
 }
 
+nav a:hover{
+    text-decoration: lightcoral;
+    color: blue;
+
+}
 
 #menuHamburguer{
     display: none;
@@ -69,20 +76,53 @@ body{
     'aside aside aside aside'
     'footer footer footer footer';
     grid-template-rows: 15vh 60vh 60vh 30vh;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.7vw
 }
 }
 
 
 section{
     grid-area: section;
-    background-color: blue
+    background-color:lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dokdo', cursive;
+
 }
+section img{
+    border-radius: 100%;
+    z-index: 2;
+}
+
 aside{
     grid-area: aside;
-    background-color: crimson;
+    background-color: lightcoral;
+    font-family: 'Dokdo', cursive;
+    font-size: 30pt;
 }
 
 footer{
     grid-area: footer;
-    background-color:lawngreen;
+    background-color:lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+footer img{
+    width: 32px;
+    height: 32px;
+}
+
+#redesocial{
+    display: flex;
+    justify-content: space-around;
+}
+#interação{
+    display: flex;
+    justify-content: space-around;
+    color: yellow;
+    text-decoration: none;
 }
